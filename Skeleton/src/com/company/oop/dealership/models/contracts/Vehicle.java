@@ -2,13 +2,15 @@ package com.company.oop.dealership.models.contracts;
 
 import com.company.oop.dealership.models.enums.VehicleType;
 
-public interface Vehicle {
+public interface Vehicle extends Commentable{
 
     int getWheels();
 
     VehicleType getType();
 
     String getMake();
+
+    double getPrice();
 
     String getModel();
 
