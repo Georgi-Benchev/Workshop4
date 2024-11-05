@@ -6,7 +6,7 @@ import java.util.List;
 
 public class LogoutCommand extends BaseCommand {
 
-    public final static String USER_LOGGED_OUT = "You logged out!";
+    private final static String USER_LOGGED_OUT = "You logged out!";
 
     public LogoutCommand(VehicleDealershipRepository vehicleDealershipRepository) {
         super(vehicleDealershipRepository);
