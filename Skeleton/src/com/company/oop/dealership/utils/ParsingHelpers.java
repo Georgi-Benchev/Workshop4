@@ -1,7 +1,7 @@
 package com.company.oop.dealership.utils;
 
 public class ParsingHelpers {
-    public static final String NO_SUCH_ENUM = "There is no %s in %ss.";
+    private static final String NO_SUCH_ENUM = "There is no %s in %ss.";
 
     public static double tryParseDouble(String valueToParse, String errorMessage) {
         try {

@@ -11,9 +11,9 @@ import java.util.List;
 public class RegisterUserCommand extends BaseCommand {
 
     private final static String USER_REGISTERED = "User %s registered successfully!";
-    public final static String USER_LOGGED_IN_ALREADY = "User %s is logged in! Please log out first!";
+    private final static String USER_LOGGED_IN_ALREADY = "User %s is logged in! Please log out first!";
     private final static String USER_ALREADY_EXIST = "User %s already exist. Choose a different username!";
-    public static final int EXPECTED_NUMBER_OF_ARGUMENTS = 4;
+    private static final int EXPECTED_NUMBER_OF_ARGUMENTS = 4;
 
     public RegisterUserCommand(VehicleDealershipRepository vehicleDealershipRepository) {
         super(vehicleDealershipRepository);

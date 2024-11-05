@@ -18,6 +18,9 @@ public class ShowVehiclesCommand extends BaseCommand {
     protected String executeCommand(List<String> parameters) {
         ValidationHelpers.validateArgumentsCount(parameters, EXPECTED_NUMBER_OF_ARGUMENTS);
         String username = parameters.get(0);
+
+
+
         return showUserVehicles(username);
     }
 

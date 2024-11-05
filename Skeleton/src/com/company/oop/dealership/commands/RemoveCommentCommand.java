@@ -12,12 +12,12 @@ import java.util.List;
 public class RemoveCommentCommand extends BaseCommand {
 
     private final static String COMMENT_INDEX_OUT_OF_BOUNDS = "There is no comment on this index.";
-    public final static String INVALID_COMMENT_INDEX = "Invalid comment index. Expected a number.";
-    public final static String COMMENT_REMOVED_SUCCESSFULLY = "%s removed comment successfully!";
+    private final static String INVALID_COMMENT_INDEX = "Invalid comment index. Expected a number.";
+    private final static String COMMENT_REMOVED_SUCCESSFULLY = "%s removed comment successfully!";
     private final static String INVALID_VEHICLE_INDEX = "Invalid vehicle index. Expected a number.";
     private final static String VEHICLE_INDEX_OUT_OF_BOUNDS = "There is no vehicle on this index.";
 
-    public static final int EXPECTED_NUMBER_OF_ARGUMENTS = 3;
+    private static final int EXPECTED_NUMBER_OF_ARGUMENTS = 3;
 
     public RemoveCommentCommand(VehicleDealershipRepository vehicleDealershipRepository) {
         super(vehicleDealershipRepository);

@@ -60,6 +60,9 @@ public class VehicleDealershipRepositoryImpl implements VehicleDealershipReposit
 
     @Override
     public void login(User user) {
+        if (hasLoggedInUser()){
+            throw new IllegalArgumentException("There is a user already logged in");
+        }
         loggedUser = user;
     }
 
@@ -92,4 +95,6 @@ public class VehicleDealershipRepositoryImpl implements VehicleDealershipReposit
     public Comment createComment(String content, String author) {
         return new CommentImpl(content, author);
     }
+
+
 }
