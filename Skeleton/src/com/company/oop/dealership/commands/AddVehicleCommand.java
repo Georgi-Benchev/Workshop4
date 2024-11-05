@@ -10,12 +10,12 @@ import java.util.List;
 
 public class AddVehicleCommand extends BaseCommand {
 
-    public static final int EXPECTED_NUMBER_OF_ARGUMENTS = 5;
-    public static final String INVALID_PRICE = "Invalid value for price. Should be a number.";
-    public static final String INVALID_SEATS_MESSAGE = "Invalid seats. Expected a number.";
-    public static final String INVALID_WEIGHT_MESSAGE = "Invalid weight capacity. Expected a number.";
-    public static final String CANNOT_CREATE_THIS_TYPE_OF_VEHICLE = "Cannot create this type of vehicle.";
-    public final static String VEHICLE_ADDED_SUCCESSFULLY = "%s added vehicle successfully!";
+    private static final int EXPECTED_NUMBER_OF_ARGUMENTS = 5;
+    private static final String INVALID_PRICE = "Invalid value for price. Should be a number.";
+    private static final String INVALID_SEATS_MESSAGE = "Invalid seats. Expected a number.";
+    private static final String INVALID_WEIGHT_MESSAGE = "Invalid weight capacity. Expected a number.";
+    private static final String CANNOT_CREATE_THIS_TYPE_OF_VEHICLE = "Cannot create this type of vehicle.";
+    private final static String VEHICLE_ADDED_SUCCESSFULLY = "%s added vehicle successfully!";
 
     public AddVehicleCommand(VehicleDealershipRepository vehicleDealershipRepository) {
         super(vehicleDealershipRepository);
