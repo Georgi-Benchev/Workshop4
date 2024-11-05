@@ -10,9 +10,9 @@ public class LoginCommand extends BaseCommand {
 
     private final static String USER_LOGGED_IN = "User %s successfully logged in!";
     private final static String WRONG_USERNAME_OR_PASSWORD = "Wrong username or password!";
-    public final static String USER_LOGGED_IN_ALREADY = "User %s is logged in! Please log out first!";
+    private final static String USER_LOGGED_IN_ALREADY = "User %s is logged in! Please log out first!";
 
-    public static final int EXPECTED_NUMBER_OF_ARGUMENTS = 2;
+    private static final int EXPECTED_NUMBER_OF_ARGUMENTS = 2;
 
     public LoginCommand(VehicleDealershipRepository vehicleDealershipRepository) {
         super(vehicleDealershipRepository);
