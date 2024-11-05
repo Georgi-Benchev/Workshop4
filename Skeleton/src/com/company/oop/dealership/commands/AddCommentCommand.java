@@ -11,10 +11,10 @@ import java.util.List;
 
 public class AddCommentCommand extends BaseCommand {
 
-    public static final int EXPECTED_NUMBER_OF_ARGUMENTS = 3;
-    public static final String INVALID_INPUT_MESSAGE = "Invalid input. Expected a number.";
-    public final static String COMMENT_ADDED_SUCCESSFULLY = "%s added comment successfully!";
-    public final static String VEHICLE_DOES_NOT_EXIST = "The vehicle does not exist!";
+    private static final int EXPECTED_NUMBER_OF_ARGUMENTS = 3;
+    private static final String INVALID_INPUT_MESSAGE = "Invalid input. Expected a number.";
+    private final static String COMMENT_ADDED_SUCCESSFULLY = "%s added comment successfully!";
+    private final static String VEHICLE_DOES_NOT_EXIST = "The vehicle does not exist!";
 
     public AddCommentCommand(VehicleDealershipRepository vehicleDealershipRepository) {
         super(vehicleDealershipRepository);
@@ -38,7 +38,7 @@ public class AddCommentCommand extends BaseCommand {
 
         Comment comment = getVehicleDealershipRepository().createComment(content, getVehicleDealershipRepository().getLoggedInUser().getUsername());
 
-        getVehicleDealershipRepository().getLoggedInUser().addComment(comment, vehicle);
+        getVehicleDealershipRepository().getLoggedInUser().addComment(comment, vehicle);//
 
         return String.format(COMMENT_ADDED_SUCCESSFULLY, getVehicleDealershipRepository().getLoggedInUser().getUsername());
     }
