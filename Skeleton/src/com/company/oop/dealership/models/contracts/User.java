@@ -5,6 +5,7 @@ import com.company.oop.dealership.models.enums.UserRole;
 import java.util.List;
 
 public interface User {
+    String printUserInfo();
 
     String getUsername();
 
